@@ -1,0 +1,105 @@
+body, h1, h2, h3, p, label {
+  margin: 30;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url(https://images6.alphacoders.com/783/783112.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+}
+
+header {
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #d8d7d7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#location-form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  margin-right: 5px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #200b00;
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  background-color: #702700;
+  transition-duration: 0.5s;
+}
+
+#current-location-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#today-data,
+#tomorrow-data {
+  width: 48%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#today-data {
+  background: #dfe6e9;
+}
+
+#tomorrow-data {
+  background-color: #dfe6e9;
+}
+
+#error-message {
+  color: #d9534f;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  input[type="text"] {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #dashboard .dashboard-section {
+    flex: 0 0 100%;
+  }
+}
